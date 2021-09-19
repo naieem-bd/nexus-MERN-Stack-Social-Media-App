@@ -1,0 +1,28 @@
+{
+  "name": "sociUp-MERN-Stack-Social-Media-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naieem-bd/sociUp-MERN-Stack-Social-Media-App.git"
+  },
+  "keywords": [],
+  "author": "Naieem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naieem-bd/sociUp-MERN-Stack-Social-Media-App/issues"
+  },
+  "homepage": "https://github.com/naieem-bd/sociUp-MERN-Stack-Social-Media-App#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
