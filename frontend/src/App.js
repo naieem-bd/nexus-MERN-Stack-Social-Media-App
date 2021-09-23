@@ -1,8 +1,8 @@
+import HomeScreen from "./screens/home/HomeScreen";
+
 function App() {
   return (
-    <div>
-      hello nexus
-    </div>
+    <HomeScreen />
   );
 }
 
