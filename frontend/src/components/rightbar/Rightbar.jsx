@@ -3,15 +3,16 @@ import { Users } from '../../dummyData'
 import Online from '../online/Online'
 
 const Rightbar = ({ profile }) => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
 
   const HomeRightbar = () => {
     return (
       <>
         <div className="birthdayContainer">
-          <img className="birthdayImg" src="/assets/pic/gift.png" alt="" />
+          <img className="birthdayImg" src="pic/gift.png" alt="" />
           <span className="birthdayText"><b>Alpot Smith</b> and <b>3 Other Friends</b> have a birthday today!</span>
         </div>
-        <img className="rightbarAd" src="/assets/pic/ad.png" alt="" />
+        <img className="rightbarAd" src={`${PF}pic/ad.png`} alt="" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
           {Users.map(u => (
@@ -44,27 +45,27 @@ const Rightbar = ({ profile }) => {
         <h4 className="rightbarTitle">User Friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/pic/person/person-1.jpg" alt="" />
+            <img className="rightbarFollowingImg" src={`${PF}pic/person/person-1.jpg`} alt="" />
             <span className="rightbarFollowingName">Jhon Durjoy</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/pic/person/person-1.jpg" alt="" />
+            <img className="rightbarFollowingImg" src={`${PF}pic/person/person-1.jpg`} alt="" />
             <span className="rightbarFollowingName">Jhon Durjoy</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/pic/person/person-1.jpg" alt="" />
+            <img className="rightbarFollowingImg" src={`${PF}pic/person/person-1.jpg`} alt="" />
             <span className="rightbarFollowingName">Jhon Durjoy</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/pic/person/person-1.jpg" alt="" />
+            <img className="rightbarFollowingImg" src={`${PF}pic/person/person-1.jpg`} alt="" />
             <span className="rightbarFollowingName">Jhon Durjoy</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/pic/person/person-1.jpg" alt="" />
+            <img className="rightbarFollowingImg" src={`${PF}pic/person/person-1.jpg`} alt="" />
             <span className="rightbarFollowingName">Jhon Durjoy</span>
           </div>
           <div className="rightbarFollowing">
-            <img className="rightbarFollowingImg" src="/assets/pic/person/person-1.jpg" alt="" />
+            <img className="rightbarFollowingImg" src={`${PF}pic/person/person-1.jpg`} alt="" />
             <span className="rightbarFollowingName">Jhon Durjoy</span>
           </div>
         </div>

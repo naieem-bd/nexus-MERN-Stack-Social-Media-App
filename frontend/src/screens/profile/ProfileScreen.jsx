@@ -5,6 +5,8 @@ import Topbar from "../../components/topbar/Topbar"
 import Rightbar from "../../components/rightbar/Rightbar"
 
 const ProfileScreen = () => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
+
   return (
     <>
       <Topbar />
@@ -13,8 +15,8 @@ const ProfileScreen = () => {
         <div className="profileRight">
           <div className="profileRightTop">
             <div className="profileCover">
-              <img className="profileCoverImg" src="/assets/pic/cover.jpeg" alt="" />
-              <img className="profileUserImg" src="/assets/pic/person/person-1.jpg" alt="" />
+              <img className="profileCoverImg" src={`${PF}pic/cover.jpeg`} alt="" />
+              <img className="profileUserImg" src={`${PF}pic/person/person-1.jpg`} alt="" />
             </div>
             <div className="profileInfo">
               <h4 className="profileInfoName">Name of the User</h4>
